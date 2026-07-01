@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prospect Outreach"
+  short_description: "Analyze prospect fit and draft consultative outreach emails."
+  default_prompt: "Use $prospect-outreach to analyze our company and a prospect, score the fit, and draft a gradual outreach sequence."
+
+policy:
+  allow_implicit_invocation: true
