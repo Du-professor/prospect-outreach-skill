@@ -1,4 +1,4 @@
-﻿# Consultative Outreach Email Sequences
+# Consultative Outreach Email Sequences
 
 Draft gradual outreach. The sequence should feel like an informed business-development inquiry: clear about the intent to explore cooperation or fit, but restrained enough that it does not become an immediate product pitch.
 
@@ -57,13 +57,15 @@ Rules:
 
 ## Email Output Fields
 
-For every email in both the prospect-local language version and the English version, output:
+For P1-P3 accounts, output every email in both the prospect-local language version and the English version with:
 
 - Subject
 - Body
 - Personalization basis
 - Recommended send timing
 - Follow-up interval
+
+For P4 accounts, do not write a normal four-email sales sequence by default. State that active outreach is not recommended. If the user explicitly still wants a message, output only one neutral research or routing note in both languages with the same fields above, and omit follow-up pressure.
 
 ## Tone Rules
 
@@ -89,7 +91,7 @@ Use the final score and priority tier before drafting:
 - **P1 / 80-100:** Write with a confident cooperation angle. The first email may name the most relevant solution area, but should still ask whether it matches current priorities.
 - **P2 / 60-79:** Write as fit exploration. The first email may say the sender is exploring potential cooperation or whether a product/solution/service direction is relevant, but should avoid listing products until the recipient confirms the topic.
 - **P3 / 40-59:** Write as research or routing. Ask who owns the topic or whether it is relevant later; avoid recommending products directly.
-- **P4 / below 40:** Recommend not sending an active sales sequence. If the user still needs a message, write a neutral information-gathering note, not a sales email.
+- **P4 / below 40:** Recommend not sending an active sales sequence. If the user explicitly still needs a message, write a neutral information-gathering note, not a sales email, and do not create repeated follow-ups unless asked.
 
 The first email can be explicit about intent, but not pushy. Good intent phrases include:
 

@@ -1,4 +1,4 @@
-﻿# Prospect Matching Framework
+# Prospect Matching Framework
 
 Score each prospect out of 100. Use evidence from the prospect's public information, the user's company information, and clearly labeled inference. Do not award full points for a dimension unless the evidence is direct and relevant.
 
@@ -31,10 +31,22 @@ Use these labels in scoring rationale:
 - **Unknown:** Important factor is not available.
 - **Weak signal:** Some relevance exists but is not enough to rely on for a sales claim.
 
+## Source Notes
+
+For each important claim, record the source type and freshness:
+
+- Official prospect source: company website, product page, press release, annual report, job post, or official social channel.
+- Official user-company source: user-provided material, company website, product page, case study, or datasheet.
+- Third-party source: news, directory, marketplace listing, public database, or analyst page.
+- Inference: conclusion drawn from visible evidence; do not present it as fact.
+
+When public pages conflict, prefer official and recent sources. If the evidence is older than 24 months or no date is visible, mark the evidence confidence lower unless the fact is stable.
+
 ## Scoring Discipline
 
 - Penalize missing evidence in the evidence confidence dimension rather than inventing facts.
 - If the user's company fit depends on a capability not shown in the provided information, mark it as a question to verify.
+- Do not use the user's product category alone as proof of fit; tie the score to a prospect workflow, product line, project signal, technical requirement, or role.
 - A high technical fit with no visible buying trigger should usually be P2, not P1.
 - A promising company with an irrelevant contact should lose points under contact role relevance and receive a routing-oriented email.
 - If the account is low fit, the email should ask a research or routing question, not pitch a solution.
