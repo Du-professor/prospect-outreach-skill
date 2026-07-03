@@ -72,6 +72,11 @@ Contact: Head of Automation
 联系人：自动化负责人
 ```
 
+### 贡献者
+
+- Du-professor：Skill 创建者与维护者
+- Codex：AI 协作开发与文档支持
+
 ### 隐私与安全
 
 本仓库不包含 API key、访问令牌、账号密码、IP 地址、个人工作路径、客户私密数据或任何运行时缓存。
@@ -141,6 +146,11 @@ Our company: https://example.com
 Prospect company: https://example-prospect.com
 Contact: Head of Automation
 ```
+
+### Contributors
+
+- Du-professor: Skill creator and maintainer
+- Codex: AI-assisted development and documentation support
 
 ### Privacy and Security
 
