@@ -12,6 +12,21 @@ Draft gradual outreach. The sequence should feel like an informed business-devel
 
 ## Sequence Structure
 
+## Outreach Scenarios
+
+Choose the scenario that best matches the account-development decision:
+
+| Scenario | Use When | First-email posture |
+|---|---|---|
+| Customer development | Prospect may buy or specify the user's product in its own operations. | Ask about current workflow, project priority, or evaluation criteria. |
+| Channel or distributor cooperation | Prospect sells, integrates, distributes, or services related solutions in a target region. | Ask whether they evaluate new product lines or supplier partnerships. |
+| Technical cooperation | Prospect has engineering overlap but buying path is unclear. | Ask whether there is value in comparing technical approaches. |
+| Systems integrator partnership | Prospect designs automation, equipment, or software solutions for end customers. | Ask whether they evaluate hardware/platform partners for projects. |
+| Event follow-up | User met the prospect at a trade show, webinar, or visit. | Reference only the real event context provided by the user. |
+| LinkedIn message | User asks for social outreach. | Use 2-4 short sentences and one question. |
+| WhatsApp/WeChat short message | User asks for chat outreach. | Use a brief permission-based message; do not include a full pitch. |
+| Phone opener | User asks for call script. | Use a 20-40 second opener and one routing/qualification question. |
+
 ### Initial Email
 
 Purpose: open a conversation and, when the score supports it, transparently state the sender's cooperation or fit-exploration intent.
@@ -53,6 +68,7 @@ Rules:
 - Send around 14 calendar days after follow-up 2.
 - Acknowledge it may not be a current priority.
 - Offer to reconnect later or be routed to the right person.
+- Include a light opt-out line when appropriate, such as "If this is not relevant, I will not follow up further."
 - Do not use guilt, urgency, false scarcity, or pressure.
 
 ## Email Output Fields
@@ -75,6 +91,23 @@ For P4 accounts, do not write a normal four-email sales sequence by default. Sta
 - Do not imply privileged knowledge of the prospect's systems.
 - Do not cite scraped personal details unless they are business-relevant and public.
 - Keep the sender credible by saying less, but making the observation precise.
+- For LinkedIn, WhatsApp, WeChat, and phone openers, shorten the message and ask permission before sending more context.
+- If using a business-contact opt-out line, keep it natural and non-legalistic.
+
+## Pre-send QA
+
+Before finalizing each email package, check and revise until these pass:
+
+- One primary CTA per email.
+- Usually 80-150 words for emails; shorter for chat or LinkedIn.
+- Specific personalization based on official facts, third-party facts, or clearly labeled weak signals.
+- No fake relationship, fake referral, fake prior conversation, fake urgency, or deceptive subject line.
+- No unsupported ROI, savings, performance, certification, customer-logo, or compatibility claim.
+- No private personal data, private email, private phone, or sensitive personal attribute.
+- No attachment, demo request, meeting pressure, or product catalog in the first email unless the user explicitly asks.
+- Wording matches the P1/P2/P3/P4 strategy and any hard cap in the scoring framework.
+- P4 accounts do not receive a four-email sales follow-up sequence unless the user explicitly overrides the recommendation.
+- Sensitive industries use restrained, exploratory wording.
 
 ## Example Progression
 

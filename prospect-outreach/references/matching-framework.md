@@ -22,6 +22,23 @@ Score each prospect out of 100. Use evidence from the prospect's public informat
 | 40-59 | P3 | Nurture or research more before active selling. Use a light-touch exploratory message only if there is a strong reason. |
 | 0-39 | P4 | Do not actively sell now. Track the account or ask for more information before outreach. |
 
+Apply hard caps after calculating the numeric score. The final priority cannot exceed the capped tier even when the raw score is higher.
+
+## Hard Caps and Downgrades
+
+| Condition | Maximum Priority | Required Handling |
+|---|---|---|
+| No official source for the prospect can be found | P2 | Mark evidence confidence low and avoid strong product claims. |
+| Prospect website or identity cannot be verified | P4 | Do not score beyond a research note unless the user provides credible information. |
+| No prospect product, service, solution, or workflow evidence | P3 | Do not claim fit; ask a routing or research question. |
+| Only same broad industry, no specific workflow or technical evidence | P3 | Use nurture/research angle, not a product recommendation. |
+| No contact role is provided | P3 | Score contact role conservatively and write routing-oriented outreach. |
+| Contact appears unrelated to the topic | P3 | Ask for the right owner instead of pitching. |
+| Low evidence plus high technical claims would be required | P3 | Mark high risk and remove unsupported technical promises. |
+| Sensitive industry with weak evidence, such as medical, financial, public sector, defense, or critical infrastructure | P3 | Use restrained language and compliance-oriented questions. |
+| User company information is missing | No score | Output missing information checklist only. |
+| Prospect information is missing | No score | Output generic ICP hypothesis only; do not draft sales emails. |
+
 ## Evidence Labels
 
 Use these labels in scoring rationale:
@@ -42,11 +59,25 @@ For each important claim, record the source type and freshness:
 
 When public pages conflict, prefer official and recent sources. If the evidence is older than 24 months or no date is visible, mark the evidence confidence lower unless the fact is stable.
 
+## Evidence Strength Matrix
+
+Before scoring, map important claims into this matrix:
+
+| Evidence strength | Use in scoring | Outreach wording |
+|---|---|---|
+| Official fact | Can support direct scoring and specific observations. | "I noticed on your website..." |
+| Third-party fact | Can support context but should be cross-checked. | "Public sources suggest..." |
+| Weak signal | Can support hypotheses only. | "If this is relevant..." |
+| Inference | Can guide questions, not claims. | "I wanted to understand whether..." |
+| Unknown | Should lower confidence or trigger a missing-info question. | Do not mention as fact. |
+
 ## Scoring Discipline
 
 - Penalize missing evidence in the evidence confidence dimension rather than inventing facts.
 - If the user's company fit depends on a capability not shown in the provided information, mark it as a question to verify.
 - Do not use the user's product category alone as proof of fit; tie the score to a prospect workflow, product line, project signal, technical requirement, or role.
+- Apply hard caps even if the raw score appears high.
+- Prefer a lower priority when confidence and business fit disagree.
 - A high technical fit with no visible buying trigger should usually be P2, not P1.
 - A promising company with an irrelevant contact should lose points under contact role relevance and receive a routing-oriented email.
 - If the account is low fit, the email should ask a research or routing question, not pitch a solution.

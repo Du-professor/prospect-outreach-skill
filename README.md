@@ -16,6 +16,7 @@
 - 同时生成潜在客户当地语言版本和英文版本。
 - 第一封邮件可以说明合作或方案匹配探索意图，但不能硬推产品。
 - 明确区分事实、推断、未知项和证据不足的部分。
+- 增加合规约束、硬性降级规则、发送前 QA、CRM 字段和多潜客优先级表。
 
 ### 适用场景
 
@@ -101,6 +102,7 @@ It is designed for B2B sales, partner development, account research, lead qualif
 - Generate both the prospect-local language version and an English version.
 - Allow the first email to state a restrained cooperation or fit-exploration intent without hard-selling products.
 - Clearly separate sourced facts, reasonable inferences, unknowns, and weak evidence.
+- Add compliance guardrails, hard downgrade rules, pre-send QA, CRM fields, and multi-prospect priority tables.
 
 ### Use Cases
 
