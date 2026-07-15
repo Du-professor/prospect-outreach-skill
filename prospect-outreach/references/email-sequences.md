@@ -1,142 +1,135 @@
-# Consultative Outreach Email Sequences
+# Consultative Outreach Sequences
 
-Draft gradual outreach. The sequence should feel like an informed business-development inquiry: clear about the intent to explore cooperation or fit, but restrained enough that it does not become an immediate product pitch.
+Draft gradual, evidence-based outreach. Be transparent about the intent to explore fit or cooperation, but confirm relevance before presenting products in detail.
 
-## Language Selection
+## Contents
 
-- Always generate two versions of the outreach sequence: a prospect-local language version and an English version.
-- Use the user's requested language as the prospect-local language when specified.
-- Otherwise infer the prospect-local language from the prospect website, company location, contact region, or business context.
-- If unclear, default the prospect-local language to Chinese.
-- The English version is required even when the prospect-local language is already English; in that case, output one polished English sequence and label it as both local and English rather than duplicating identical text.
+- Language Policy
+- Outreach Scenarios
+- Sequence Length by Final Priority
+- P1 and P2 Sequence
+- P3 Sequence
+- Output Fields
+- Response and Stop Rules
+- Pre-send QA
 
-## Sequence Structure
+## Language Policy
+
+- Write the analysis in the user's current language unless requested otherwise.
+- Infer the prospect-local sendable language from the contact's location, relevant business unit, official website, and user instruction.
+- If the local language cannot be determined reliably, use English. Do not invent a local-language assumption.
+- Always provide an English sendable version.
+- If the local language is English, provide one polished English sendable sequence rather than duplicating it.
+- If neither sendable version is Chinese, add a Chinese internal-reference translation. Label it `Internal reference - not the primary send version`.
+- If the local language is Chinese, provide Chinese and English sendable versions; do not add a third duplicate.
+- Localize formality, terminology, honorifics, spelling, dates, and time zones. Translate meaning rather than sentence structure.
 
 ## Outreach Scenarios
 
-Choose the scenario that best matches the account-development decision:
+| Scenario | First-message posture |
+|---|---|
+| End-customer development | Ask about the workflow, project priority, or evaluation criteria. |
+| OEM supply | Ask whether the relevant platform or component category is evaluated for equipment designs. |
+| Systems-integrator partnership | Ask whether the team evaluates platform or hardware partners for customer projects. |
+| Channel or distributor cooperation | Ask whether the company reviews complementary product lines or supplier partnerships. |
+| Technical partnership | Ask whether comparing technical approaches would be useful. |
+| Event follow-up | Reference only an event or interaction explicitly provided by the user. |
+| LinkedIn | Use 2-4 short sentences and one question. |
+| WhatsApp or WeChat | Ask permission before sending details; do not paste a full email pitch. |
+| Phone opener | Use a 20-40 second opener and one routing or qualification question. |
 
-| Scenario | Use When | First-email posture |
-|---|---|---|
-| Customer development | Prospect may buy or specify the user's product in its own operations. | Ask about current workflow, project priority, or evaluation criteria. |
-| Channel or distributor cooperation | Prospect sells, integrates, distributes, or services related solutions in a target region. | Ask whether they evaluate new product lines or supplier partnerships. |
-| Technical cooperation | Prospect has engineering overlap but buying path is unclear. | Ask whether there is value in comparing technical approaches. |
-| Systems integrator partnership | Prospect designs automation, equipment, or software solutions for end customers. | Ask whether they evaluate hardware/platform partners for projects. |
-| Event follow-up | User met the prospect at a trade show, webinar, or visit. | Reference only the real event context provided by the user. |
-| LinkedIn message | User asks for social outreach. | Use 2-4 short sentences and one question. |
-| WhatsApp/WeChat short message | User asks for chat outreach. | Use a brief permission-based message; do not include a full pitch. |
-| Phone opener | User asks for call script. | Use a 20-40 second opener and one routing/qualification question. |
+## Sequence Length by Final Priority
 
-### Initial Email
+| Final priority | Default output |
+|---|---|
+| P1 | Initial email, follow-up 1, follow-up 2, final follow-up. |
+| P2 | Initial email, follow-up 1, follow-up 2, final follow-up. |
+| P3 | One research/routing email and one clearly labeled optional follow-up. |
+| P4 | No outreach. If the user explicitly insists, one neutral research note only. |
 
-Purpose: open a conversation and, when the score supports it, transparently state the sender's cooperation or fit-exploration intent.
+Use the final priority after all readiness, evidence, status, and industry caps.
 
-Rules:
-- Mention one specific, non-sensitive observation about the prospect.
-- State the sender's intent in a restrained way, such as exploring potential cooperation, understanding whether a relevant product/solution/service direction fits, or finding the right team to discuss a possible match.
-- Ask one low-pressure qualifying question about their current priority, workflow, technical direction, evaluation criteria, ownership, or openness to relevant context.
-- Do not introduce a detailed product pitch, pricing, broad catalog, unsupported ROI claim, or aggressive demo request.
-- Do not attach decks, request a demo, or ask for a meeting as the main CTA unless the user explicitly asks.
+## P1 and P2 Sequence
 
-Recommended timing: Day 0.
+### Initial Email - Day 0
 
-### Follow-Up 1
+- Mention one specific, non-sensitive observation supported by the evidence ledger.
+- State the intent to explore cooperation or determine whether a solution area is relevant.
+- Ask one low-pressure qualifying question.
+- Do not include a product catalog, pricing, unsupported ROI, attachment, aggressive demo request, or meeting request as the main CTA unless the user explicitly asks.
+- P1 may name the strongest solution area. P2 should verify the scenario before describing offerings.
 
-Purpose: add light value and clarify relevance.
+### Follow-Up 1 - 3-5 Business Days Later
 
-Rules:
-- Send after 3-5 business days.
-- Refer back to the initial question.
-- Add one useful insight, comparison, or operational angle related to the prospect's business.
-- Ask whether the topic is owned by the recipient or someone else on the team.
+- Refer to the initial question without implying it was read.
+- Add one useful operational or technical consideration relevant to the prospect.
+- Ask whether the topic is owned by the recipient or another team.
 
-### Follow-Up 2
+### Follow-Up 2 - 7-10 Business Days After Follow-Up 1
 
-Purpose: introduce the user's relevant capability gently.
+- Connect one demonstrated user-company capability to the prospect's possible scenario.
+- Use conditional language such as `if this is relevant` or `if your team is evaluating this`.
+- Ask whether exchanging brief context would be useful; do not ask for a purchase decision.
 
-Rules:
-- Send 7-10 business days after follow-up 1.
-- Briefly connect one user-company capability to the prospect's possible scenario.
-- Use conditional language: "if this is relevant", "if you are evaluating", "if your team is looking at".
-- Ask whether it would be useful to exchange context, not whether they want to buy.
+### Final Follow-Up - About 14 Calendar Days After Follow-Up 2
 
-### Final Follow-Up
-
-Purpose: close the loop politely.
-
-Rules:
-- Send around 14 calendar days after follow-up 2.
-- Acknowledge it may not be a current priority.
-- Offer to reconnect later or be routed to the right person.
-- Include a light opt-out line when appropriate, such as "If this is not relevant, I will not follow up further."
+- Acknowledge that the topic may not be a current priority.
+- Offer to reconnect later or be routed to the correct owner.
+- Include a natural stop-contact line, such as `If this is not relevant, I will not follow up further.`
 - Do not use guilt, urgency, false scarcity, or pressure.
 
-## Email Output Fields
+## P3 Sequence
 
-For P1-P3 accounts, output every email in both the prospect-local language version and the English version with:
+### Research or Routing Email - Day 0
+
+- Explain the topic being researched and ask whether it is relevant or who owns it.
+- Do not recommend a product or claim a confirmed pain point.
+- Keep the CTA to permission, relevance, or routing.
+
+### Optional Follow-Up - 7-10 Business Days Later
+
+- Label this message `Optional - send only if there is a credible reason to continue`.
+- Ask one final routing or timing question and state that no further follow-up will be sent if the topic is not relevant.
+- Do not add a new sales claim.
+
+## Output Fields
+
+For every permitted message provide:
 
 - Subject
 - Body
-- Personalization basis
-- Recommended send timing
+- Personalization basis and evidence-ledger reference
+- Primary CTA
+- Recommended send timing and time-zone assumption
 - Follow-up interval
+- Draft status: `Ready for review` or `Needs input`
 
-For P4 accounts, do not write a normal four-email sales sequence by default. State that active outreach is not recommended. If the user explicitly still wants a message, output only one neutral research or routing note in both languages with the same fields above, and omit follow-up pressure.
+If sender name, role, company identity, signature details, or another required field is missing, use an obvious bracketed placeholder, list it under missing inputs, and mark the draft `Needs input`. Never label a draft with unresolved placeholders as ready to send.
 
-## Tone Rules
+## Response and Stop Rules
 
-- Be concise: usually 80-150 words per email unless the user asks for long-form.
-- Use plain language and one clear ask.
-- Avoid exaggerated claims, buzzwords, and broad product catalogs.
-- Do not imply privileged knowledge of the prospect's systems.
-- Do not cite scraped personal details unless they are business-relevant and public.
-- Keep the sender credible by saying less, but making the observation precise.
-- For LinkedIn, WhatsApp, WeChat, and phone openers, shorten the message and ask permission before sending more context.
-- If using a business-contact opt-out line, keep it natural and non-legalistic.
+- Pause the planned sequence after any reply and switch to the reply playbook.
+- Stop and suppress future outreach after opt-out, explicit refusal, complaint, or permanent bounce.
+- For a wrong-person reply, thank the recipient and ask for routing at most once.
+- For an out-of-office reply, wait until after the stated return date and resume with no more than one appropriate message.
+- Do not restart an initial sequence for an account already in an active cadence.
 
 ## Pre-send QA
 
-Before finalizing each email package, check and revise until these pass:
+Check every sendable message and report pass/fail. Revise before returning when possible.
 
-- One primary CTA per email.
-- Usually 80-150 words for emails; shorter for chat or LinkedIn.
-- Specific personalization based on official facts, third-party facts, or clearly labeled weak signals.
-- No fake relationship, fake referral, fake prior conversation, fake urgency, or deceptive subject line.
-- No unsupported ROI, savings, performance, certification, customer-logo, or compatibility claim.
-- No private personal data, private email, private phone, or sensitive personal attribute.
-- No attachment, demo request, meeting pressure, or product catalog in the first email unless the user explicitly asks.
-- Wording matches the P1/P2/P3/P4 strategy and any hard cap in the scoring framework.
-- P4 accounts do not receive a four-email sales follow-up sequence unless the user explicitly overrides the recommendation.
+- One primary CTA.
+- Usually 80-150 words for email; shorter for social or chat.
+- Subject accurately reflects the message and is not deceptive.
+- Specific personalization is traceable to the evidence ledger.
+- Facts, third-party context, weak signals, and inferences are not conflated.
+- No fake relationship, referral, prior conversation, urgency, or scarcity.
+- No unsupported ROI, savings, performance, certification, customer-logo, compatibility, or procurement claim.
+- No private contact data or sensitive personal attribute.
+- No attachment, product catalog, meeting pressure, or aggressive demo request in the first email unless requested.
+- Sequence length and posture match final P1/P2/P3/P4 priority.
+- Sender identity and signature requirements are satisfied or clearly flagged as missing.
+- No unresolved placeholder appears in a draft marked `Ready for review`.
+- Language reads naturally for the intended region and is not a literal translation.
 - Sensitive industries use restrained, exploratory wording.
-
-## Example Progression
-
-1. Initial: "I noticed your team is working in [specific area]. How are you currently thinking about [workflow or technical challenge]?"
-2. Follow-up 1: "Teams in this area often compare [approach A] and [approach B]. Is that evaluation happening in your team?"
-3. Follow-up 2: "If [scenario] is relevant, our team may have useful experience around [capability]. Would it be useful to compare notes?"
-4. Final: "I will close the loop for now. If this becomes relevant later, I would be glad to reconnect or speak with the right colleague."
-
-
-## Score-Based Email Strategy
-
-Use the final score and priority tier before drafting:
-
-- **P1 / 80-100:** Write with a confident cooperation angle. The first email may name the most relevant solution area, but should still ask whether it matches current priorities.
-- **P2 / 60-79:** Write as fit exploration. The first email may say the sender is exploring potential cooperation or whether a product/solution/service direction is relevant, but should avoid listing products until the recipient confirms the topic.
-- **P3 / 40-59:** Write as research or routing. Ask who owns the topic or whether it is relevant later; avoid recommending products directly.
-- **P4 / below 40:** Recommend not sending an active sales sequence. If the user explicitly still needs a message, write a neutral information-gathering note, not a sales email, and do not create repeated follow-ups unless asked.
-
-The first email can be explicit about intent, but not pushy. Good intent phrases include:
-
-- "想了解贵司是否有相关方向的合作空间"
-- "想判断我们在某一类场景上是否有交流价值"
-- "希望先请教这个方向是否由您或相关团队负责"
-- "I am reaching out to understand whether there may be a relevant cooperation angle"
-- "I wanted to check whether this solution area is something your team is evaluating"
-
-Avoid phrases that make the email feel like a hard sell:
-
-- "我们可以立刻帮贵司解决"
-- "请安排演示"
-- "我们是最佳供应商"
-- "This will reduce your costs by X%" unless sourced and specific.
+- Final or optional last follow-up contains a natural stop-contact line.

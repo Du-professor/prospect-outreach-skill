@@ -1,52 +1,81 @@
-# Prospect Research Sources
+# Prospect Research and Evidence
 
-Use this guide when researching companies, judging evidence strength, or deciding what to do when inputs are incomplete.
+Use current public information to establish company identity, workflows, technical context, commercial paths, triggers, and safe personalization. Research only what is necessary for the account decision.
 
 ## Source Priority
 
 Prefer sources in this order:
 
-1. Official company website: about, products, services, solutions, industries, support, partner, downloads, certifications, and contact pages.
-2. Official product pages, datasheets, manuals, case studies, press releases, annual reports, sustainability reports, and investor materials.
-3. Official hiring pages and job descriptions when they reveal current technology, expansion, or project signals.
+1. Official company pages: about, products, services, solutions, industries, support, partners, downloads, certifications, and contact pages.
+2. Official datasheets, manuals, case studies, press releases, annual reports, investor material, and sustainability reports.
+3. Official hiring pages when they reveal current technology, expansion, or project direction.
 4. Official social channels and verified company profiles.
-5. Credible third-party sources: reputable news, trade publications, public databases, tender portals, patent pages, conference/exhibition listings, app marketplaces, partner directories, and channel pages.
-6. Lower-confidence sources: scraped directories, SEO pages, old PDFs, forums, and unverifiable reposts.
+5. Credible third parties: reputable news, trade publications, public databases, tender portals, patent records, conference listings, and official partner directories.
+6. Lower-confidence material: scraped directories, marketplace reposts, SEO pages, old PDFs, forums, and unverifiable copies.
 
-## Evidence Handling
+Do not use a lower-confidence source for a strong outreach claim when a primary source is available.
 
-- Prefer recent and official evidence.
-- Treat undated pages as stable only for facts such as company location, broad product categories, and longstanding services.
-- Mark evidence older than 24 months as stale unless the fact is unlikely to change.
-- When sources conflict, explain the conflict and prefer official or more recent sources.
-- Do not infer procurement intent from industry overlap alone.
+## Evidence Ledger
+
+Record each material conclusion before scoring.
+
+| Field | Requirement |
+|---|---|
+| Claim | One testable statement, not a compound conclusion. |
+| Evidence label | Official fact, third-party fact, weak signal, reasonable inference, or unknown. |
+| Source owner | User company, prospect, third party, user-provided, or none. |
+| Page title | Exact or concise page title. |
+| URL | Direct public page URL when available. |
+| Published date | Use the visible publication/update date; otherwise `Not shown`. |
+| Accessed date | Record the research date. |
+| Freshness | Current, stable-undated, stale, conflicting, or unknown. |
+| Score impact | Account Fit or Outreach Readiness dimension affected. |
+| Outreach use | Direct observation, contextual support, question only, or do not mention. |
+
+For user-provided information that cannot be publicly confirmed, set source owner to `User-provided, not independently verified`. Do not silently upgrade it to an official fact.
+
+## Freshness and Conflict Rules
+
+- Prefer recent official evidence.
+- Treat undated pages as stable only for broad product categories, locations, and longstanding services.
+- Mark evidence older than 24 months as stale unless the fact is structurally stable.
+- When sources conflict, state the conflict and use the more authoritative and recent source.
+- Do not infer procurement intent from industry overlap, a product download, a job post, or technology use alone.
+- Keep pain points, budgets, projects, and technical constraints as hypotheses unless directly stated.
 
 ## Missing Information Behavior
 
-| Missing Input | What To Do |
+| Missing input | Required behavior |
 |---|---|
-| User company website or description | Stop. Output a missing information checklist only. Do not score or draft outreach. |
-| Prospect website, company name, or description | Output a generic ICP hypothesis and missing information checklist. Do not score or draft sales outreach. |
-| Prospect website inaccessible but company identity can be verified elsewhere | Proceed with low evidence confidence and apply relevant hard caps. |
-| Prospect identity cannot be verified | Treat as P4/research-only. |
-| Contact name missing | Continue if company evidence is sufficient. Write role-neutral outreach. |
-| Contact role missing | Score contact role conservatively and write routing-oriented outreach. |
-| Target market/language missing | Infer from prospect website, country, and business context; default local language to Chinese only when unclear. |
+| User-company website or description | Stop; return only a missing-information checklist. |
+| Prospect website, company name, or description | Return a generic ICP hypothesis and checklist; do not score or draft outreach. |
+| Prospect website inaccessible but identity verified elsewhere | Continue with low evidence confidence and apply caps. |
+| Prospect identity cannot be verified | Use P4/research-only treatment. |
+| Contact name missing | Continue when account evidence is sufficient; use role-neutral language. |
+| Contact role missing | Preserve Account Fit, cap Outreach Readiness at 49, and use routing outreach. |
+| Public business contact channel missing | Cap Outreach Readiness at 29; recommend enrichment without guessing an address. |
+| Sender identity missing | Draft with explicit placeholders and mark messages `Needs input`. |
+| Local language unclear | Use English as the sendable fallback and provide Chinese internal reference when required. |
 
-## Research Questions To Answer
+## Research Questions
 
-- What does the prospect sell, build, integrate, operate, or support?
-- Which product lines, services, or solutions create a workflow where the user's company could help?
-- What technical environment is visible: automation, robotics, HMI, SCADA, MES, machine vision, edge AI, cloud, embedded systems, industrial networks, compliance, or lifecycle services?
-- What buying trigger is visible: expansion, new products, modernization, hiring, certification, new facility, new market, public tender, partner program, or support issue?
-- Who likely owns the topic: engineering, automation, procurement, IT/OT, digitalization, maintenance, plant operations, product management, channel, or executive team?
-- What evidence is missing before sales claims would be safe?
+- What does each company sell, build, integrate, operate, or support?
+- Which specific workflow creates a plausible match?
+- Which user-company capability is publicly demonstrated, and what proof supports it?
+- What technical environment is visible: industrial computing, automation, robotics, HMI, SCADA, MES, machine vision, edge AI, cloud, embedded systems, networks, compliance, or lifecycle services?
+- Which commercial path is plausible: end customer, OEM, systems integrator, channel/distributor, technical partner, or nurture?
+- What current trigger is visible, and how strong is it?
+- Which roles likely own, influence, evaluate, buy, or route the topic?
+- What must be verified before a product, compatibility, performance, or ROI statement would be safe?
 
-## Batch Prospect Output
+## Batch Entity Resolution
 
-When the user provides multiple prospects, first output a compact table:
+Before scoring a batch:
 
-| Company | Fit Score | Priority | Best Angle | Missing Evidence | Recommended Next Action |
-|---|---:|---|---|---|---|
-
-Then provide detailed analysis only for P1/P2 accounts unless the user asks for every account.
+- Normalize case, spacing, punctuation, legal suffixes, and obvious transliteration variants for comparison.
+- Merge exact company duplicates and name variants, but retain all source names.
+- Keep parent companies, subsidiaries, brands, and regional business units separate when they have distinct websites, buying teams, or contact status.
+- Flag uncertain matches instead of merging them.
+- Preserve the most restrictive contact status across duplicates: `do not contact` over `paused`, `contacted`, `long-term nurture`, and `not contacted`.
+- Do not generate a new initial message for an account already contacted or suppressed.
+- Record the last research date, last contact stage, next action, and next review date.
